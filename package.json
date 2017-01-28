@@ -4,7 +4,8 @@
   "description": "The fastest calendar in the world, using reactive programming ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack && http-server"
   },
   "author": "",
   "license": "ISC",
@@ -16,6 +17,7 @@
   },
   "devDependencies": {
     "awesome-typescript-loader": "^3.0.0-beta.18",
+    "grx": "git+https://github.com/georgebatalinski/grx.git",
     "source-map-loader": "^0.1.6",
     "typescript": "^2.1.5"
   }

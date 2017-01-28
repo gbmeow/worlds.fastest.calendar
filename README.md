@@ -12,8 +12,7 @@ npm install
 
 ## Run 
 ```
-webpack 
-
+npm run build
 ```
 
 
