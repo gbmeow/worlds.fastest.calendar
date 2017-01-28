@@ -1,11 +1,17 @@
 import * as React from "react";
 import * as GRX from "grx";
 
-export const Hello = () => {
+export interface Source {
+    stream: GRX.Stream<number>;
+}
+
+export const Calendar = (props: Source) => {
     let results:Array<any> = [];
-    GRX.fromArray([100,200,300]).subscribe( (res: any) => {
+    
+    props.stream.subscribe( (res: any) => {
         results.push( res );
     });
+    
     return markdown( results );
 }
 
